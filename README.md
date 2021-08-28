@@ -1,27 +1,42 @@
-# Myapp
+ # Myapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+Project generated via [ng-cli](https://github.com/angular/angular-cli) v12.2.2.
 
-## Development server
+```
+#install yarn
+npm install -g yarn
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#install angular
+npm install -g @angular/cli
 
-## Code scaffolding
+#create project
+ng new [project name]
+cd [project name]
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+yarn add @angular/material
 
-## Build
+#generate component
+ng generate component login --module app
+ng g component login --module app #short form
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#build and store in dist/
+ng build 									
+ng build --prod #build for production
 
-## Running unit tests
+#test
+ng test #with karma
+ng e2e #end-to-end testing
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#start deployment server at localhost:4200
+ng serve
+ng serve --open #open browser
 
-## Running end-to-end tests
+#help
+ng help
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Further Info
 
-## Further help
+To get more help on the ng-cli go check out the [ng-cli-ref](https://angular.io/cli) page.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+For help on tests see [Karma](https://karma-runner.github.io) page.

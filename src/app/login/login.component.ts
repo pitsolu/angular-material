@@ -49,6 +49,7 @@ export class LoginComponent implements OnInit {
   	if(this.loginForm.valid){
 
   		console.log(this.loginForm.value)
+      console.log(this.login)
   	}
   }
 }
