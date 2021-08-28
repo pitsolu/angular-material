@@ -14,6 +14,7 @@ ng new [project name]
 cd [project name]
 
 yarn add @angular/material
+yarn add @angular/flex-layout
 
 #generate component
 ng generate component login --module app
