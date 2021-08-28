@@ -2,8 +2,8 @@
 
 Project generated via [ng-cli](https://github.com/angular/angular-cli) v12.2.2.
 
-```
-#install yarn
+```sh
+# install yarn
 npm install -g yarn
 
 #install angular
