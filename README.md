@@ -2,8 +2,8 @@
 
 Project generated via [ng-cli](https://github.com/angular/angular-cli) v12.2.2.
 
-Below are sample commands for `angular-cli` you don't need run anything after and
-including the `generate` or `g` commands since those facets already exists in 
+Below are sample commands for `angular-cli` you don't need run create project
+command `ng new` or `generate` commands since those facets already exists in 
 the project.
 
 ```sh
