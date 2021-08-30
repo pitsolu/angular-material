@@ -2,6 +2,10 @@
 
 Project generated via [ng-cli](https://github.com/angular/angular-cli) v12.2.2.
 
+Below are sample commands for `angular-cli` you don't need run anything after and
+including the `generate` or `g` commands since those facets already exists in 
+the project.
+
 ```sh
 # install yarn
 npm install -g yarn
@@ -19,6 +23,12 @@ yarn add @angular/flex-layout
 #generate component
 ng generate component login --module app
 ng g component login --module app #short form
+
+#generate a module and add routing
+ng generate module layout --routing --module app
+
+#generate a service
+ng generate service login/auth
 
 #build and store in dist/
 ng build 									
