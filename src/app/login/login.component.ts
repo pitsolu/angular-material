@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from './services/auth.service';
+import { first } from 'rxjs/operators';
 
 
 @Component({
@@ -14,7 +16,9 @@ export class LoginComponent implements OnInit {
 
   login = {username:null, password:null}
 
-  constructor(private router:Router, private fb: FormBuilder) { 
+  constructor(private router:Router, 
+              private fb: FormBuilder,
+              private authServ: AuthService) { 
 
   	this.router = router;
     this.fb = fb;
@@ -42,14 +46,28 @@ export class LoginComponent implements OnInit {
       (this.loginForm.controls[fieldName].dirty || this.loginForm.controls[fieldName].touched);
   }
 
+  // convenience getter for easy access to form fields
+   get f() { return this.loginForm.controls; }
+
   onSubmit(){
 
-  	// this.router.navigate(["/contacts"])
+  	this.router.navigate(["/app/contacts"])
 
-  	if(this.loginForm.valid){
+  	// if(this.loginForm.valid){
 
-  		console.log(this.loginForm.value)
-      console.log(this.login)
-  	}
+  	// 	console.log(this.loginForm.value)
+   //    console.log(this.login)
+  	// }
+
+    // this.authServ.login(this.f.username.value, this.f.username.value)
+    //   .pipe(first())
+    //   .subscribe(data => {
+
+    //     console.log("data")
+    //   },
+    //   error => {
+
+    //     console.log("error")
+    //   })
   }
 }
